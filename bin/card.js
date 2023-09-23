@@ -15,7 +15,7 @@ const options = {
 // Text + chalk definitions
 const data = {
   name: chalk.white('Shrena P'),
-  // handle: chalk.cyan('@natterstefan'),
+  handle: chalk.cyan('@shrena'),
   labelWork: chalk.white.bold('      Work:'),
   work: chalk.white('Developer and Facilitator'),
   // labelTwitter: chalk.white.bold('   Twitter:'),
@@ -32,7 +32,7 @@ const data = {
 
 // Actual strings we're going to output
 const newline = '\n'
-// const heading = `${data.name} / ${data.handle}`
+const heading = `${data.name} / ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
 // const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
@@ -43,12 +43,12 @@ const carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen
 // effectively
 const output =
-  heading +
+  // heading +
   newline +
   newline +
   working +
   newline +
-  twittering +
+  // twittering +
   newline +
   githubing +
   newline +
