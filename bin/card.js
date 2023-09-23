@@ -14,20 +14,20 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Shrena P'),
-  handle: chalk.cyan('@shrena'),
+  name: chalk.white.bold('Shrena'),
+  handle: chalk.magenta('@shrena'),
   labelWork: chalk.white.bold('      Work:'),
-  work: chalk.white('Developer and Facilitator'),
+  work: chalk.magenta('Developer and Facilitator'),
   // labelTwitter: chalk.white.bold('   Twitter:'),
   // twitter: chalk.cyan('https://twitter.com/natterstefan'),
   labelGitHub: chalk.white.bold('    GitHub:'),
-  github: chalk.cyan('https://github.com/shrena-patel'),
+  github: chalk.green('https://github.com/shrena-patel'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  linkedin: chalk.cyan('https://linkedin.com/in/shrenapatel'),
+  linkedin: chalk.magenta('https://linkedin.com/in/shrenapatel'),
   labelWeb: chalk.white.bold('       Web:'),
-  web: chalk.cyan('https://shrena-patel.com'),
+  web: chalk.green('https://shrena-patel.com'),
   labelCard: chalk.white.bold('      Card:'),
-  npx: chalk.white('npx shrena'),
+  npx: chalk.magenta('npx shrena'),
 }
 
 // Actual strings we're going to output
@@ -43,13 +43,13 @@ const carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen
 // effectively
 const output =
-  // heading +
+  heading +
   newline +
   newline +
   working +
   newline +
   // twittering +
-  newline +
+  // newline +
   githubing +
   newline +
   linkedining +
